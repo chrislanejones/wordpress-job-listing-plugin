@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.wrap {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Admin Messages */
+#job-listing-admin-messages {
+  margin-bottom: 20px;
+}
+
+.notice {
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-left: 4px solid #fff;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.notice p {
+  margin: 0;
+}
+
+.notice-success {
+  border-left-color: #46b450;
+}
+
+.notice-error {
+  border-left-color: #dc3232;
+}
+
+.notice-dismiss {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.notice-dismiss .screen-reader-text {
+  display: none;
+}
+
+/* Setup Form */
+#job-listing-setup-form .form-table th {
+  width: 150px;
+  text-align: left;
+}
+
+#job-listing-setup-form .form-table td {
+  padding: 10px;
+}
+
+#job-listing-setup-form .regular-text {
+  width: 100%;
+  max-width: 400px;
+}
+
+#job-listing-setup-form .submit {
+  margin-top: 20px;
+}
+
+/* Schedule Hours Selector */
+.schedule-hours-selector .hour-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.schedule-hours-selector .hour-button {
+  background-color: #f0f0f1;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.schedule-hours-selector .hour-button.selected {
+  background-color: #000000;
+  color: white;
+}
+
+.schedule-hours-selector .selected-hours-container {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.schedule-hours-selector .schedule-error {
+  color: red;
+  margin-top: 5px;
+}
+
+/* Last Fetch Info */
+#last-fetch-info {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+#last-fetch-info h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#last-fetch-info p {
+  margin: 5px 0;
+}
+
+/* Database Info */
+.database-info-wrapper {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+}
+
+.database-info-wrapper h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.database-info-wrapper .widefat {
+  width: 100%;
+}
+
+.database-info-wrapper .widefat th,
+.database-info-wrapper .widefat td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.database-info-wrapper .widefat th {
+  font-weight: bold;
+}
+
+.database-info-wrapper .status-success {
+  color: #ffffff;
+}
+
+.database-info-wrapper .status-error {
+  color: #ffffff;
+}
+
+/* Status Messages */
+.status-saving,
+.status-refreshing,
+.status-success,
+.status-error {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.status-saving {
+  background-color: #ffc107;
+  color: #333;
+}
+
+.status-refreshing {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.status-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status-error {
+  background-color: #dc3545;
+  color: #fff;
+}
