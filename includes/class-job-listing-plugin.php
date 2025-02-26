@@ -60,6 +60,7 @@ public function add_security_headers() {
         header('X-Frame-Options: SAMEORIGIN');
         header('X-XSS-Protection: 1; mode=block');
     }
+} 
 
 public function render_job_listing_shortcode($atts) {
     // Parse shortcode attributes with sanitization
@@ -333,13 +334,12 @@ public function register_rest_route() {
         }
     }
 
-    **
-    * Check if we've exceeded our rate limit for API requests
-    * 
-    * @return boolean True if under rate limit, false if over
-    */
-   private function check_rate_limit() {
-       // Check if we've made too many requests recently
+/**
+ * Check if we've exceeded our rate limit for API requests
+ * 
+ * @return boolean True if under rate limit, false if over
+ */
+private function check_rate_limit() {
        $current_time = time();
        $api_requests = get_transient($this->rate_limit_transient);
        
