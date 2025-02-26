@@ -139,26 +139,6 @@ public function enqueue_scripts() {
     ]);
 }
 
-private function validate_api_response($data) {
-    if (!is_array($data)) {
-        return false;
-    }
-    
-    if (!isset($data['jobs']) || !is_array($data['jobs'])) {
-        return false;
-    }
-    
-    foreach ($data['jobs'] as $job) {
-        // Ensure required fields exist
-        if (!isset($job['id']) || !isset($job['title'])) {
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-
 public function register_rest_route() {
     register_rest_route('job-listing/v1', '/list', [
         'methods' => 'GET',

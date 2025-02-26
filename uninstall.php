@@ -4,13 +4,6 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
     exit;
 }
 
-// We need to access non-namespaced WordPress functions
-use function \wp_clear_scheduled_hook;
-use function \delete_option;
-use function \delete_site_option;
-use function \delete_transient;
-use function \current_user_can;
-
 // Check user capabilities
 if (!current_user_can('activate_plugins')) {
     return;

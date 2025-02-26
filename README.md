@@ -1,3 +1,5 @@
+![Image showing screenshots of plugin](Shortcode-Job-Listing.webp)
+
 # Job Listing Plugin - Shortcode Documentation
 
 This is the Shortcode addition, I also made an [Elementor Edition](https://github.com/chrislanejones/job-listing-plugin)
