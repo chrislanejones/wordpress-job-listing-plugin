@@ -43,6 +43,8 @@ class Job_Listing_Plugin {
 
 // Add this to class-job-listing-plugin.php
 
+// Add this to class-job-listing-plugin.php
+
 public function init() {
     $this->options = get_option('job_listing_settings');
     
